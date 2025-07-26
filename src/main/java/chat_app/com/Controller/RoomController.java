@@ -12,7 +12,7 @@ import chat_app.com.Service.RoomService;
 
 @RestController
 @RequestMapping("/room")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("https://chat-app-ui-fawn.vercel.app")
 public class RoomController {
 
     @Autowired

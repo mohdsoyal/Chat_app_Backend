@@ -26,7 +26,7 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // Endpoint for WebSocket connection with fallback to SockJS
         registry.addEndpoint("/chat")
-                .setAllowedOrigins("http://localhost:5173") // Allow frontend connection (React app etc.)
+                .setAllowedOrigins("https://chat-app-ui-fawn.vercel.app") // Allow frontend connection (React app etc.)
                 .withSockJS(); // Enable SockJS fallback for browsers that don’t support WebSocket
     }
 }
